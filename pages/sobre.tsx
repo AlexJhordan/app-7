@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export const Sobre = () => {
+function Sobre() {
   return (
     <>
       <div>Sobre 2</div>
@@ -10,6 +10,6 @@ export const Sobre = () => {
       </Link>
     </>
   );
-};
+}
 
 export default Sobre;
