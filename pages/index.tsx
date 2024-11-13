@@ -5,7 +5,9 @@ export const Index = () => {
   return (
     <>
       <div>Index 2</div>
-      <Link href="/sobre">Ir para Sobre</Link>
+      <Link href="/sobre" prefetch={true}>
+      <a>Ir para Sobre</a>
+      </Link>
     </>
   );
 };

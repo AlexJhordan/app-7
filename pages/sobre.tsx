@@ -5,7 +5,9 @@ export const Sobre = () => {
   return (
     <>
       <div>Sobre 2</div>
-      <Link href="/">Ir para Home</Link>
+      <Link href="/" prefetch={true}>
+        Ir para Home
+      </Link>
     </>
   );
 };
