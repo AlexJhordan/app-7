@@ -3,12 +3,11 @@ import React from "react";
 
 function Home() {
   return (
-    <>
+    <div>
+
       <div>Home 2</div>
-      <Link href="/sobre" prefetch={true}>
-        Ir para Sobre
-      </Link>
-    </>
+      <Link href="/sobre">Ir para Sobre</Link>
+    </div>
   );
 }
 

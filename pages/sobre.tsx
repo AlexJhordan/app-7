@@ -3,12 +3,10 @@ import React from "react";
 
 function Sobre() {
   return (
-    <>
+    <div>
       <div>Sobre 2</div>
-      <Link href="/" prefetch={true}>
-        Ir para Home
-      </Link>
-    </>
+      <Link href="/">Ir para Home</Link>
+    </div>
   );
 }
 
