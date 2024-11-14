@@ -6,16 +6,18 @@ function Tempo(props: any) {
 
   return (
     <div>
-      <div>{dynamicDateString} dinâmico</div>
-      <div>{props.staticDateString} estático</div>
+      <div>{dynamicDateString} (dinâmico)</div>
+      <div>{props.staticDateString} (estático )</div>
     </div>
   );
 }
-export function getStaticProps() {
+export async function getStaticProps() {
+  console.log("> Passando pelo getStaticProps()");
+
   const staticDate = new Date();
   const staticDateString = staticDate.toUTCString();
 
-  return { props: { staticDateString } };
+  return { props: { staticDateString }, revalidate: 1 };
 }
 
 export default Tempo;
